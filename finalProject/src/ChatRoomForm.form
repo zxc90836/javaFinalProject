@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ChatRoomForm">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="560" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <splitpane id="474e5">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <dividerLocation value="380"/>
+          <oneTouchExpandable value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="ec8e1" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8bae3" class="javax.swing.JLabel" binding="chatRoomName">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <text value="這裡預設為房間的名稱"/>
+                </properties>
+              </component>
+              <splitpane id="f06bc">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <dividerLocation value="300"/>
+                  <dividerSize value="5"/>
+                  <orientation value="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="b3623" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="90d0b" class="javax.swing.JTextArea" binding="textRecord">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <lineWrap value="true"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="c761" binding="sendPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="5e0d5" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+                        <constraints border-constraint="South"/>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="653ea" class="javax.swing.JButton" binding="送出Button" default-binding="true">
+                            <constraints/>
+                            <properties>
+                              <text value="送出"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="179f6" class="javax.swing.JTextArea" binding="sendArea">
+                        <constraints border-constraint="Center"/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+            </children>
+          </grid>
+          <grid id="7246d" binding="userPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <splitpane id="f4678" binding="userJSplitPane">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <dividerLocation value="300"/>
+                  <dividerSize value="3"/>
+                  <orientation value="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="de5c7" binding="onlineListPane" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="98813" class="javax.swing.JLabel" binding="playerLabel1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <component id="ff6e5" class="javax.swing.JLabel" binding="playerLabel3">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <component id="75990" class="javax.swing.JLabel" binding="playerLabel2">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="7cf04" binding="currentUserPane" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <splitpane id="5af0">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="200" height="200"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <dividerLocation value="30"/>
+                          <orientation value="0"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="ca5c6" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                            <constraints>
+                              <splitpane position="left"/>
+                            </constraints>
+                            <properties>
+                              <model>
+                                <item value="尋血犬"/>
+                                <item value="直布羅陀"/>
+                                <item value="生命線"/>
+                                <item value="探路者"/>
+                                <item value="惡靈"/>
+                                <item value="邦加羅爾"/>
+                                <item value="腐蝕"/>
+                                <item value="幻象"/>
+                                <item value="辛烷"/>
+                                <item value="華森"/>
+                                <item value="暗碼士"/>
+                                <item value="亡靈"/>
+                                <item value="蘿芭"/>
+                                <item value="蕾帕特"/>
+                                <item value="天際線"/>
+                                <item value="轟哥"/>
+                                <item value="瓦爾基里"/>
+                              </model>
+                            </properties>
+                          </component>
+                          <component id="bb2f6" class="javax.swing.JLabel" binding="currentUserLbl">
+                            <constraints>
+                              <splitpane position="right"/>
+                            </constraints>
+                            <properties>
+                              <text value="玩家名稱"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </splitpane>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>
